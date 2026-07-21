@@ -1,0 +1,29 @@
+.terminal {
+  height: 100%;
+  background: rgba(20, 20, 22, 0.92);
+  color: #4af626;
+  font-family: "SF Mono", "Fira Code", Menlo, monospace;
+  font-size: 13px;
+  padding: 14px;
+  overflow-y: auto;
+  cursor: text;
+}
+
+.terminal-line {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  display: flex;
+  gap: 6px;
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #4af626;
+    font: inherit;
+  }
+}
