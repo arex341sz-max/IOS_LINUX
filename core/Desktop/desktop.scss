@@ -1,0 +1,22 @@
+.desktop {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  // macOS Big Sur–inspired backdrop: soft blue/purple mountain-glow gradient.
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.25), transparent 40%),
+    linear-gradient(
+      160deg,
+      #6fa8dc 0%,
+      #5b8fd6 18%,
+      #6f7fc9 38%,
+      #7c6fbd 55%,
+      #8f5fae 72%,
+      #a85a8f 88%,
+      #b85770 100%
+    );
+  background-size: cover;
+  background-position: center;
+}
