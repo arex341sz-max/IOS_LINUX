@@ -1,0 +1,59 @@
+// ============================
+// Global reset + design tokens
+// ============================
+
+:root {
+  --font-system: -apple-system, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --glass-bg: rgba(255, 255, 255, 0.18);
+  --glass-bg-strong: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-blur: blur(28px);
+
+  --text-primary: #1d1d1f;
+  --text-on-dark: #ffffff;
+
+  --accent: #0a84ff;
+
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+
+  --shadow-window: 0 25px 60px rgba(0, 0, 0, 0.35);
+  --shadow-dock: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+  --z-menubar: 100;
+  --z-window: 200;
+  --z-dock: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-system);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
